@@ -1,4 +1,4 @@
-#test_videoproc.py
+#video_processor.py
 import cv2
 from src.core.image_detector import ObjectDetection
 
