@@ -1,13 +1,22 @@
 # JustCV - Urban Traffic Monitor 🚦
 
-![Python](https://img.shields.io/badge/python-3.13-blue.svg)
+![Python](https://img.shields.io/badge/python-3.12-blue.svg)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-Computer%20Vision-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Real-time AI-powered traffic monitoring system using YOLOv8 for object detection and classification in urban environments.
+## 🚀 Live Demo
 
+**Try it now - no installation required!**
+
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-xl-dark.svg)](https://huggingface.co/spaces/justgodtears/justcv)
+
+Experience real-time object detection on urban traffic footage directly in your browser. Upload your own videos or watch the live demo with side-by-side comparison.
+
+---
+
+Real-time AI-powered traffic monitoring system using YOLOv8...
 ![Demo](demo/demo_preview.gif)
-
+gitg
 *Side-by-side comparison: Raw footage (left) vs Real-time detection (right)*
 
 ---
@@ -56,6 +65,20 @@ The system detects and counts the following urban traffic objects:
 ---
 
 ## 🚀 Quick Start
+
+### Option 1: Try Online (Recommended)
+
+**No setup required!** Visit the live demo:
+
+👉 **[JustCV on Hugging Face Spaces](https://huggingface.co/spaces/justgodtears/justcv)**
+
+- Upload your traffic videos
+- See real-time object detection
+- Side-by-side comparison view
+
+---
+
+### Option 2: Local Installation
 
 ### Prerequisites
 
@@ -227,6 +250,25 @@ JustCV was developed as a portfolio project to demonstrate:
 
 ---
 
+## 🌐 Deployment
+
+This project is deployed on Hugging Face Spaces for easy access and demonstration.
+
+**Live Application:** [https://huggingface.co/spaces/justgodtears/justcv](https://huggingface.co/spaces/justgodtears/justcv)
+
+### Deploy Your Own
+
+Want to deploy your own version?
+
+1. Fork this repository
+2. Create a [Hugging Face Space](https://huggingface.co/new-space)
+3. Select **Gradio SDK**
+4. Connect to your GitHub repo
+5. Your app will be live in minutes!
+
+
+---
+
 ## 📝 Citation
 
 This project uses YOLOv8 from Ultralytics. If you use this work, please cite:
@@ -258,6 +300,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - GitHub: [@justgodtears](https://github.com/justgodtears)
 - LinkedIn: [Oliwier Opyrchal](https://pl.linkedin.com/in/oliwier-opyrchal)
 - Portfolio: [JustCV](https://github.com/justgodtears/JustCV)
+-  Live Demo: [JustCV on HF Spaces](https://huggingface.co/spaces/justgodtears/justcv)
 
 ---
 
