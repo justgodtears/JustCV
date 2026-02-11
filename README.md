@@ -7,6 +7,7 @@
 Real-time AI-powered traffic monitoring system using YOLOv8 for object detection and classification in urban environments.
 
 ![Demo](demo/demo_preview.gif)
+
 *Side-by-side comparison: Raw footage (left) vs Real-time detection (right)*
 
 ---
