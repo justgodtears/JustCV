@@ -10,17 +10,18 @@ class ObjectDetection:
     def __init__(self, model_path=YOLO_MODEL_PATH):            #Default argument is yolov8m
         self.model = YOLO(str(model_path))
 
-
+    # Method for detecting objects
     def detect(self, image):
-        results = self.model(image)
+        allowed_classes = [0, 1, 2, 3, 5, 7]
+        results = self.model(image, classes=allowed_classes)
         return results
 
-
+    # Method for saving annotations on image
     def save_annotations(self,results, output_path):
         annotated_img = results[0].plot()
         cv2.imwrite(str(output_path), annotated_img)
 
-
+    # Method for counting objects and saving in dict
     def count_objects(self, results):
         detected_objects = results[0].boxes.cls
         class_names = results[0].names
