@@ -5,7 +5,8 @@ torchaudio>=2.0.0
 
 # Computer Vision
 ultralytics>=8.4.13
-opencv-contrib-python>=4.13.0.92
+opencv-python-headless; platform_system != "Windows"
+opencv-contrib-python; platform_system == "Windows"
 
 # Web Interface
 gradio>=6.5.1

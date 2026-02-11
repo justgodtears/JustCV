@@ -1,9 +1,28 @@
 import gradio as gr
 import tempfile
+from ultralytics import YOLO
 from src.config import RAW_VIDEO, PROCESSED_VIDEO
 from src.core.video_processor import VideoProcessor
 from src.core.image_detector import ObjectDetection
 from pathlib import Path
+
+
+# Auto-download model on first run
+MODEL_PATH = Path("models/yolov8m.pt")
+MODEL_PATH.parent.mkdir(exist_ok=True)
+
+if not MODEL_PATH.exists():
+    print("📥 Downloading YOLOv8 model...")
+    temp_model = YOLO("yolov8m.pt")
+
+    # Model downloaded to cache
+    import shutil
+    shutil.copy(
+        Path.home() / ".cache/ultralytics/weights/yolov8m.pt",
+        MODEL_PATH
+    )
+    print("Model ready!")
+
 
 # Model
 detector = ObjectDetection(str(Path("models/yolov8m.pt")))
